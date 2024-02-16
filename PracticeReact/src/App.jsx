@@ -30,8 +30,8 @@ function App() {
      console.log(data)
   }
   return (
- <BrowserRouter>
- <h1>React</h1>
+ <BrowserRouter >
+ <h1 className="font-serif text-3xl text-center text-white p-10" >React</h1>
     {/* <LearnComponent/>*/} 
      {/* <Learnjsx/> */}
      {/* <LearnProps name={arr}  roll={roll}/>*/}  
@@ -45,15 +45,17 @@ function App() {
      {/*<LearnConditional/> */}
    {/*   <LearnMap/>*/}
   {/* <LearnInlinecss/>*/} 
-<Routes>
+ 
+  <Routes>
 
-    <Route path='/' element={<Mainheader/>} >
-    <Route index element={<Home/>}/>
-    <Route path='/about' element={<About />} />
-    <Route path='/contact' element={<Contact/>} />
-    <Route path='*' element={<Error/>} />
-    </Route>
-    </Routes>
+<Route path='/' element={<Mainheader/>} >
+<Route index element={<Home/>}/>
+<Route path='/about' element={<About />} />
+<Route path='/contact' element={<Contact/>} />
+<Route path='*' element={<Error/>} />
+</Route>
+</Routes>
+
 
  
  </BrowserRouter>
